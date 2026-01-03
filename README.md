@@ -62,7 +62,6 @@ Client → Pi-hole (Raspberry Pi) → Upstream DNS (ISP/Public) → Internet
 ---
 
 ## 🧩 Physical Topology (Simplified)
-![Home Lab Physical Topology](images/topology.png)
 
 <details>
 <summary>Click to expand physical network diagram</summary>
