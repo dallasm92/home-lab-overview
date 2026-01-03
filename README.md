@@ -1,460 +1,126 @@
-# home-lab-overview
+# 🧪 Home Lab Overview
 
+## Purpose
 
-
-🧪 Home Lab Overview
-
-Purpose
-
-
-
-This repository provides a high-level overview of my personal home lab environment.
+This repository provides a **high-level overview** of my personal home lab environment.
 
 The lab is designed to mirror real-world IT and small-business infrastructure and is used to build hands-on experience in:
 
+- Networking fundamentals
+- Virtualization
+- Linux and Windows Server administration
+- DNS and basic security concepts
+- Professional documentation and troubleshooting
 
+This repository acts as the **architecture and navigation hub** for my other lab projects.
 
-Networking fundamentals
+---
 
+## 🧠 Architecture Summary
 
+- Dedicated Windows 11 desktop for virtualization (Hyper-V)
+- Separate always-on Ubuntu Server for services
+- Raspberry Pi dedicated to DNS filtering
+- Managed switch for wired connectivity
+- ISP router handling NAT, DHCP, and Wi-Fi
+- Mixed wired and wireless client environment
 
-Virtualization
+Design focus:
+- Separation of concerns
+- Minimal complexity
+- Realistic IT workflows
+- Security-conscious public documentation
 
+---
 
+## 🖥️ Core Devices & Roles (Sanitized)
 
-Linux and Windows Server administration
+| Device | Role |
+|------|-----|
+| Windows 11 Desktop | Hyper-V host, primary workstation |
+| Ubuntu Server | Docker host, always-on services |
+| Raspberry Pi 5 | Centralized DNS filtering (Pi-hole) |
+| Netgear GS308EP | Managed Layer 2 switch |
+| ISP Router | NAT, DHCP, Wi-Fi access point |
 
+---
 
+## 🌐 Network Overview
 
-DNS and basic security concepts
+- Wired devices connect through a managed switch
+- Wireless devices connect through the ISP router
+- All clients use centralized DNS filtering
 
-
-
-Professional documentation and troubleshooting
-
-
-
-This repo serves as the architecture and navigation hub for my other lab repositories.
-
-
-
-🖥️ Core Devices \& Roles (Sanitized)
-
-Windows 11 Desktop (Hyper-V Host)
-
-
-
-Role: Primary workstation and virtualization host
-
-
-
-OS: Windows 11 Pro
-
-
-
-Virtualization: Hyper-V
-
-
-
-Storage:
-
-
-
-NVMe 1 TB
-
-
-
-NVMe 500 GB
-
-
-
-Virtual Machines
-
-
-
-Windows Server
-
-
-
-Kali Linux
-
-
-
-Ubuntu
-
-
-
-RHEL 9 (Lab)
-
-
-
-Linux Mint
-
-
-
-Elementary OS
-
-
-
-Used for Windows Server labs, Linux administration, security testing, and multi-OS interoperability.
-
-
-
-Ubuntu Server (Always-On Server)
-
-
-
-OS: Ubuntu Server
-
-
-
-Connection: Ethernet
-
-
-
-Role:
-
-
-
-Docker host
-
-
-
-Linux server administration
-
-
-
-Long-running services
-
-
-
-DNS services are intentionally separated and handled by a dedicated Raspberry Pi.
-
-
-
-Raspberry Pi 5 (DNS \& Core Services)
-
-
-
-Role: Centralized DNS filtering (Pi-hole)
-
-
-
-Connection: Ethernet
-
-
-
-Storage: NVMe
-
-
-
-Operation: Headless
-
-
-
-Used to centralize DNS, test networking behavior, and host lightweight infrastructure services.
-
-
-
-🌐 Networking Equipment
-
-ISP-Provided Hardware
-
-
-
-Modem: Spectrum (ISP-provided)
-
-
-
-Router: Spectrum (ISP-provided)
-
-
-
-NAT
-
-
-
-DHCP
-
-
-
-Wi-Fi access point
-
-
-
-Managed Switch
-
-
-
-Model: Netgear GS308EP
-
-
-
-Layer: 2 (VLAN-capable)
-
-
-
-Purpose: Central wired connectivity and future segmentation
-
-
-
-Switch Port Map
-
-
-
-Port	Device
-
-1	Router
-
-2	Windows 11 Desktop
-
-3	Ubuntu Server
-
-4	Raspberry Pi 5
-
-📡 Wireless Clients
-
-
-
-Connected via router Wi-Fi:
-
-
-
-Amazon Alexa Dot
-
-
-
-Apple TV
-
-
-
-Xumo Box (Fire TV)
-
-
-
-iPhones (2)
-
-
-
-HP Victus Laptop
-
-
-
-MacBook (Linux Mint)
-
-
-
-Kindle
-
-
-
-iPad
-
-
-
-Epson XP-4200 Printer (Wi-Fi capable)
-
-
-
-The printer is currently USB-connected to the desktop, with planned migration to full network printing.
-
-
-
-🧩 Physical Network Diagram
-
-&nbsp;                     Internet
-
-&nbsp;                         │
-
-&nbsp;                 \[ Spectrum Modem ]
-
-&nbsp;                         │
-
-&nbsp;                 \[ Spectrum Router ]
-
-&nbsp;                 (NAT • DHCP • Wi-Fi)
-
-&nbsp;                         │
-
-&nbsp;                 ────────┴────────
-
-&nbsp;                         │
-
-&nbsp;       \[ Netgear GS308EP Managed Switch ]
-
-&nbsp;                         │
-
-&nbsp;       ┌───────────────┬───────────────┬───────────────┐
-
-&nbsp;       │               │               │
-
-&nbsp;\[Windows 11 PC]   \[Ubuntu Server]   \[Raspberry Pi 5]
-
-&nbsp;Hyper-V Host       Docker / Services   DNS (Pi-hole)
-
-
-
-🧠 Logical Network Diagram
-
-&nbsp;                        Internet
-
-&nbsp;                            │
-
-&nbsp;                  ┌─────────▼─────────┐
-
-&nbsp;                  │ Spectrum Router     │
-
-&nbsp;                  │ NAT • DHCP • Wi-Fi  │
-
-&nbsp;                  └─────────┬─────────┘
-
-&nbsp;                            │
-
-&nbsp;            ┌───────────────▼───────────────┐
-
-&nbsp;            │ Netgear GS308EP (Layer 2)       │
-
-&nbsp;            └───────────────┬───────────────┘
-
-&nbsp;                            │
-
-&nbsp;       ┌───────────────┬───────────────┬───────────────┐
-
-&nbsp;       │               │               │
-
-┌───────▼───────┐ ┌─────▼────────┐ ┌─────▼────────┐
-
-│ Windows 11 PC │ │ Ubuntu Server│ │ Raspberry Pi │
-
-│ Hyper-V Host  │ │ Docker Host  │ │ DNS (Pi-hole)│
-
-│ Multiple VMs  │ │              │ │              │
-
-└───────────────┘ └──────────────┘ └──────────────┘
-
-
-
-🔍 DNS Flow
+### DNS Flow
 
 Client Devices
+↓
+Raspberry Pi (Pi-hole)
+↓
+Upstream DNS (ISP / Public)
+↓
+Internet
 
-&nbsp;     │
 
-&nbsp;     ▼
+---
 
-&nbsp;Raspberry Pi (Pi-hole)
+## 🧩 Physical Topology (Simplified)
 
-&nbsp;     │
+<details>
+<summary>Click to expand physical network diagram</summary>
 
-&nbsp;     ▼
+Internet
+|
+[Spectrum Modem]
+|
+[Spectrum Router]
+(NAT • DHCP • Wi-Fi)
+|
+[Netgear GS308EP Switch]
+├── Windows 11 Desktop (Hyper-V)
+├── Ubuntu Server (Docker)
+└── Raspberry Pi 5 (DNS)
 
-&nbsp;Upstream DNS (ISP / Public)
+</details>
 
-&nbsp;     │
+---
 
-&nbsp;     ▼
+## 📡 Wireless Clients (Examples)
 
-&nbsp;  Internet
+- Amazon Alexa Dot
+- Apple TV
+- Xumo Box (Fire TV)
+- iPhones (2)
+- HP Victus Laptop
+- MacBook (Linux Mint)
+- Kindle
+- iPad
+- Epson XP-4200 Printer
 
+---
 
+## 📂 Related Repositories (Learning Progression)
 
+| Stage | Repository | Focus |
+|----|-----------|------|
+| 1 | [IT Support Labs](https://github.com/dallasm92/it-support-labs) | Ticket-style troubleshooting |
+| 2 | PC Build – Windows 11 Desktop *(planned)* | Hardware research & assembly |
+| 3 | Hyper-V Virtualization Lab *(planned)* | Multi-OS & Windows Server labs |
+| 4 | Linux Server Services *(planned)* | Ubuntu Server & Docker |
+| 5 | DNS & Pi-hole Lab *(planned)* | DNS filtering & testing |
 
+---
 
-All wired and wireless clients use centralized DNS filtering.
+## 🚀 Future Improvements
 
+- Convert printer to full network printing
+- VLAN design and documentation
+- Dedicated firewall appliance
+- Monitoring and uptime tracking
+- Expanded service documentation
 
+---
 
-🎯 Design Principles
+## 📌 Why This Lab Exists
 
-
-
-Separation of concerns
-
-
-
-Centralized DNS
-
-
-
-Dedicated virtualization host
-
-
-
-Managed switching
-
-
-
-Minimal complexity with clear learning value
-
-
-
-Security-conscious public documentation
-
-
-
-📂 Related Repositories (Learning Progression)
-
-
-
-IT Support Labs
-
-Ticket-style troubleshooting labs
-
-https://github.com/dallasm92/it-support-labs
-
-
-
-PC Build – Windows 11 Desktop (planned)
-
-Hardware research, build process, and validation
-
-
-
-Hyper-V Virtualization Lab (planned)
-
-Multi-OS virtualization and Windows Server labs
-
-
-
-Linux Server Services (planned)
-
-Ubuntu Server administration and Docker services
-
-
-
-DNS \& Pi-hole Lab (planned)
-
-DNS filtering, testing, and troubleshooting
-
-
-
-🚀 Future Improvements
-
-
-
-Convert printer to full network printing
-
-
-
-VLAN design and documentation
-
-
-
-Dedicated firewall appliance
-
-
-
-Monitoring and uptime tracking
-
-
-
-Expanded service documentation
-
-
-
-📌 Why This Lab Exists
-
-
-
-This lab exists to build and demonstrate practical, real-world IT skills through hands-on experimentation, troubleshooting, and documentation, while maintaining a clean and security-conscious public portfolio.
-
+This lab exists to build and demonstrate practical, real-world IT skills through hands-on experimentation, troubleshooting, and documentation — while maintaining a clean, professional, and security-conscious public portfolio.
