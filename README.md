@@ -1,5 +1,15 @@
 # 🧪 Home Lab Overview
 
+<img width="1782" height="1008" alt="image" src="https://github.com/user-attachments/assets/f4567c10-6e4b-49a6-bbf8-86f38aa6c7b8" />
+
+<details>
+  <summary>Click to expand full physical network diagram</summary>
+
+  ![Home Lab Physical Topology](images/topology.png)
+
+</details>
+
+
 ## Purpose
 
 This repository provides a **high-level overview** of my personal home lab environment.
@@ -118,6 +128,13 @@ Internet
 - Dedicated firewall appliance
 - Monitoring and uptime tracking
 - Expanded service documentation
+
+## Sanitization & Security
+This public repo intentionally omits sensitive details (exact IPs, hostnames, keys, internal configs).  
+Documentation focuses on architecture, workflows, and troubleshooting methodology.
+
+_Last updated: 2026-01-03_
+
 
 ---
 
