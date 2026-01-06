@@ -1,6 +1,6 @@
 # Home Lab Overview
 
-A security-conscious home lab built to practice entry-level IT, networking, and system administration skills.
+A security-conscious home lab built to practice entry-level IT skills (networking, virtualization, Linux/Windows administration) and document work in a portfolio-friendly way.
 
 This lab supports:
 - Virtualization (Hyper-V)
