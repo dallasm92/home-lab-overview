@@ -48,17 +48,16 @@ This repo is the **architecture + navigation hub** for my other lab projects.
 
 ---
 
-## 🖥️ Core Devices & Roles (Sanitized)
+## Core Devices & Roles (Sanitized)
 
 | Device | Role |
-|------|-----|
+|---|---|
 | Windows 11 Desktop | Hyper-V host, primary workstation |
 | Ubuntu Server | Docker host, always-on services |
 | Raspberry Pi 5 | Centralized DNS filtering (Pi-hole) |
 | Netgear GS308EP | Managed Layer-2 switch |
 | ISP Router | NAT, DHCP, Wi-Fi access point |
 
----
 
 ## 🌐 Network Overview
 - Wired devices connect through the managed switch
@@ -70,19 +69,17 @@ Client → Pi-hole (Raspberry Pi) → Upstream DNS (ISP/Public) → Internet
 
 ---
 
-## Physical topology (simplified)
+## Physical Topology (Simplified)
 
+```mermaid
 flowchart TD
   Internet --> Router[ISP Router\nNAT • DHCP • Wi-Fi]
   Router --> Switch[Netgear GS308EP\nManaged L2 Switch]
   Switch --> PC[Windows 11 Desktop\nHyper-V Host]
   Switch --> Ubuntu[Ubuntu Server\nDocker / Services]
   Switch --> Pi[Raspberry Pi 5\nPi-hole DNS]
-  Router --> WiFi[Wireless Clients\n(Laptop/Phones/Printer/Streaming/IoT)]
+  Router --> WiFi[Wireless Clients]
 
-</details>
-
----
 
 ## 📡 Wireless Clients (Examples)
 - Amazon Alexa Dot
