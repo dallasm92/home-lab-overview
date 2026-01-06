@@ -71,7 +71,7 @@ Client → Pi-hole (Raspberry Pi) → Upstream DNS (ISP/Public) → Internet
 ---
 
 ## Physical topology (simplified)
-```mermaid
+
 flowchart TD
   Internet --> Router[ISP Router\nNAT • DHCP • Wi-Fi]
   Router --> Switch[Netgear GS308EP\nManaged L2 Switch]
