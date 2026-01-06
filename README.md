@@ -80,7 +80,8 @@ flowchart TD
   Switch --> Ubuntu[Ubuntu Server\nDocker / Services]
   Switch --> Pi[Raspberry Pi 5\nPi-hole DNS]
   Router --> WiFi[Wireless Clients]
-```md
+```
+
 📡 Wireless Clients (Examples)
 
 Amazon Alexa Dot
