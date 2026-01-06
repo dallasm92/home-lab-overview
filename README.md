@@ -80,3 +80,54 @@ flowchart TD
   Switch --> Ubuntu[Ubuntu Server\nDocker / Services]
   Switch --> Pi[Raspberry Pi 5\nPi-hole DNS]
   Router --> WiFi[Wireless Clients]
+📡 Wireless Clients (Examples)
+
+Amazon Alexa Dot
+
+Apple TV
+
+Xumo Box (Fire TV)
+
+iPhones (2)
+
+HP Victus Laptop
+
+MacBook (Linux Mint)
+
+Kindle
+
+iPad
+
+Epson XP-4200 Printer
+
+📂 Related Repositories (Learning Progression)
+Stage	Repository	Focus
+1	IT Support Labs
+	Ticket-style troubleshooting
+2	PC Build – Main PC
+	Hardware research, build, and validation
+3	Hyper-V Virtualization Lab (planned)	Multi-OS + Windows Server labs
+4	Linux Server Services (planned)	Ubuntu Server + Docker
+5	DNS & Pi-hole Lab (planned)	DNS filtering + testing
+🚀 Future Improvements
+
+Convert printer to full network printing
+
+VLAN design and documentation
+
+Dedicated firewall appliance
+
+Monitoring and uptime tracking
+
+Expanded service documentation
+
+🔒 Sanitization & Security
+
+This public repo intentionally omits sensitive details (exact IPs, hostnames, keys, internal configs).
+Documentation focuses on architecture, workflows, and troubleshooting methodology.
+
+Last updated: 2026-01-03
+
+📌 Why This Lab Exists
+
+This lab exists to build and demonstrate practical, real-world IT skills through hands-on experimentation, troubleshooting, and documentation — while maintaining a clean, professional, and security-conscious public portfolio.
