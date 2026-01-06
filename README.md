@@ -1,4 +1,11 @@
-# 🧪 Home Lab Overview
+# Home Lab Overview
+
+A security-conscious home lab built to practice entry-level IT, networking, and system administration skills.
+
+This lab supports:
+- Virtualization (Hyper-V)
+- Linux and Windows administration
+- Networking fundamentals (DNS, DHCP)
 
 ## Start Here
 - 🧭 Portfolio hub (this repo): architecture + navigation
