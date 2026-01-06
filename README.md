@@ -84,7 +84,7 @@ flowchart TD
 
 📡 Wireless Clients (Examples)
 
-Amazon Alexa Dot
+Amazon Echo Dot
 
 Apple TV
 
