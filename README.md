@@ -7,12 +7,14 @@ This lab supports:
 - Linux and Windows administration
 - Networking fundamentals (DNS, DHCP)
 
-## Start Here
-- 🧭 Portfolio hub (this repo): architecture + navigation
-- 🧰 Ticket-style troubleshooting: https://github.com/dallasm92/it-support-labs
-- 🖥️ PC build + validation: https://github.com/dallasm92/pc-build-main-pc
+## Start here (60 seconds)
+This repo is the architecture + navigation hub for my home lab.
 
-**One-line lab summary:** Windows 11 Hyper-V host + always-on Ubuntu Server (Docker/services) + Raspberry Pi 5 (Pi-hole DNS) + managed Layer-2 switch + ISP router (NAT/DHCP/Wi-Fi).
+- Troubleshooting labs: https://github.com/dallasm92/it-support-labs
+- PC build + validation: https://github.com/dallasm92/pc-build-main-pc :contentReference[oaicite:10]{index=10}
+
+One-line summary:
+Windows 11 Hyper-V host + always-on Ubuntu Server (Docker/services) + Raspberry Pi 5 (Pi-hole DNS) + managed switch + ISP router (NAT/DHCP/Wi-Fi). :contentReference[oaicite:11]{index=11}
 
 ---
 
@@ -68,22 +70,15 @@ Client → Pi-hole (Raspberry Pi) → Upstream DNS (ISP/Public) → Internet
 
 ---
 
-## 🧩 Physical Topology (Simplified)
-
-<details>
-<summary>Click to expand physical network diagram</summary>
-
-Internet
-|
-[Spectrum Modem]
-|
-[Spectrum Router]
-(NAT • DHCP • Wi-Fi)
-|
-[Netgear GS308EP Switch]
-├── Windows 11 Desktop (Hyper-V)
-├── Ubuntu Server (Docker)
-└── Raspberry Pi 5 (DNS / Pi-hole)
+## Physical topology (simplified)
+```mermaid
+flowchart TD
+  Internet --> Router[ISP Router\nNAT • DHCP • Wi-Fi]
+  Router --> Switch[Netgear GS308EP\nManaged L2 Switch]
+  Switch --> PC[Windows 11 Desktop\nHyper-V Host]
+  Switch --> Ubuntu[Ubuntu Server\nDocker / Services]
+  Switch --> Pi[Raspberry Pi 5\nPi-hole DNS]
+  Router --> WiFi[Wireless Clients\n(Laptop/Phones/Printer/Streaming/IoT)]
 
 </details>
 
