@@ -81,6 +81,7 @@ flowchart TD
   Router --> WiFi[Wireless Clients]
 
 
+
 ## 📡 Wireless Clients (Examples)
 - Amazon Alexa Dot
 - Apple TV
