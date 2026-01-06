@@ -11,10 +11,10 @@ This lab supports:
 This repo is the architecture + navigation hub for my home lab.
 
 - Troubleshooting labs: https://github.com/dallasm92/it-support-labs
-- PC build + validation: https://github.com/dallasm92/pc-build-main-pc :contentReference[oaicite:10]{index=10}
+- PC build + validation: https://github.com/dallasm92/pc-build-main-pc 
 
 One-line summary:
-Windows 11 Hyper-V host + always-on Ubuntu Server (Docker/services) + Raspberry Pi 5 (Pi-hole DNS) + managed switch + ISP router (NAT/DHCP/Wi-Fi). :contentReference[oaicite:11]{index=11}
+Windows 11 Hyper-V host + always-on Ubuntu Server (Docker/services) + Raspberry Pi 5 (Pi-hole DNS) + managed switch + ISP router (NAT/DHCP/Wi-Fi). 
 
 ---
 
