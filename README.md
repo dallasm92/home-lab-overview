@@ -1,6 +1,7 @@
 # Home Lab Overview
 
 A security-conscious home lab built to practice entry-level IT skills (networking, virtualization, Linux/Windows administration) and document work in a portfolio-friendly way.
+Last reviewed: February 13, 2026
 
 This lab supports:
 - Virtualization (Hyper-V)
@@ -17,6 +18,8 @@ This repository is the architecture and navigation hub for my home lab.
 ### Related projects
 - IT Support Labs: https://github.com/dallasm92/it-support-labs
 - PC Build + Validation: https://github.com/dallasm92/pc-build-main-pc
+- AI-Assisted Home Lab Operations: https://github.com/dallasm92/ai-assisted-home-lab-operations
+- AD Lab (Windows Server 2022): https://github.com/dallasm92/ad-lab-windows-server-2022
 
 ### One-line summary
 Windows 11 Hyper-V host + always-on Ubuntu Server (Docker/services) + Raspberry Pi 5 (Pi-hole DNS) + managed switch + dedicated access point + ISP router (gateway).
@@ -38,7 +41,7 @@ This repo acts as the architecture reference point for all other lab projects.
 
 ---
 
-## 🧠 Architecture Summary
+## Architecture Summary
 
 - Dedicated Windows 11 desktop for virtualization (Hyper-V)
 - Separate always-on Ubuntu Server for services
@@ -69,7 +72,7 @@ This repo acts as the architecture reference point for all other lab projects.
 
 ---
 
-## 🌐 Network Overview
+## Network Overview
 
 - Wired devices connect through the managed switch
 - Wireless devices connect through the dedicated Omada access point
@@ -96,7 +99,7 @@ flowchart TD
 
 ---
 
-## 📶 Wireless Infrastructure (Omada)
+## Wireless Infrastructure (Omada)
 
 A dedicated access point (**TP-Link Omada EAP650**) provides wireless coverage, separating Wi-Fi responsibilities from routing and gateway functions.
 
@@ -112,7 +115,7 @@ This design more closely reflects real-world small-business and enterprise envir
 
 ---
 
-## 📡 Wireless Clients (Examples)
+## Wireless Clients (Examples)
 
 - Amazon Echo Dot
 - Apple TV
@@ -126,7 +129,7 @@ This design more closely reflects real-world small-business and enterprise envir
 
 ---
 
-## 📂 Related Repositories (Learning Progression)
+## Related Repositories (Learning Progression)
 
 | Stage | Repository | Focus |
 |---:|---|---|
@@ -138,7 +141,7 @@ This design more closely reflects real-world small-business and enterprise envir
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Convert printer to full network printing
 - VLAN design and documentation
@@ -148,7 +151,7 @@ This design more closely reflects real-world small-business and enterprise envir
 
 ---
 
-## 🔒 Sanitization & Security
+## Sanitization & Security
 
 This public repository intentionally omits:
 - Exact IP addresses
@@ -160,8 +163,6 @@ Documentation focuses on architecture, workflows, and troubleshooting methodolog
 
 ---
 
-## 📌 Why This Lab Exists
+## Why This Lab Exists
 
 This lab exists to build and demonstrate practical, real-world IT skills through hands-on experimentation, troubleshooting, and documentation — while maintaining a clean, professional, and security-conscious public portfolio.
-
-**Last updated:** 2026-01-26
