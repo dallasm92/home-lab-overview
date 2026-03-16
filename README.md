@@ -27,6 +27,13 @@ See:
 - `docs/device-inventory-sanitized.md`
 - `docs/monitoring-and-operations.md`
 - `docs/public-sanitization-standard.md`
+- `docs/firewall-platform-and-vlan-plan.md`
+- `docs/unified-dashboard-and-monitoring-pattern.md`
+- `docs/switch-operations-and-hardening.md`
+- `docs/dns-and-local-naming-pattern.md`
+- `docs/equipment-and-role-model.md`
+- `docs/standalone-ap-management-pattern.md`
+- `docs/server-installation-observations.md`
 
 ## Core Repositories
 - AI-Assisted Home Lab Operations:
