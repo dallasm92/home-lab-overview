@@ -2,7 +2,7 @@
 
 Security-first home lab portfolio documenting architecture, operations, monitoring, and maintenance workflows.
 
-Last reviewed: February 17, 2026
+Last reviewed: March 16, 2026
 
 ## What This Shows
 - Multi-host Linux operations across workstation, server, and Pi infrastructure
@@ -21,6 +21,17 @@ Last reviewed: February 17, 2026
 - Uptime monitoring for services and LAN devices
 - Scheduled backup and healthcheck jobs with failure alert hooks
 - Daily malware-signature updates + scheduled on-demand scans
+
+## Best Use In Portfolio Review
+Use this repo to show:
+- architecture thinking
+- monitoring and operations maturity
+- public-safe documentation standards
+
+For direct troubleshooting evidence, start with:
+- `it-support-labs`
+- `ad-lab-windows-server-2022`
+- `pc-build-main-pc`
 
 See:
 - `docs/current-state.md`
