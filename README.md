@@ -45,6 +45,8 @@ See:
 - `docs/equipment-and-role-model.md`
 - `docs/standalone-ap-management-pattern.md`
 - `docs/server-installation-observations.md`
+- `docs/firewall-appliance-selection-notes.md`
+- `docs/virtual-firewall-vlan-lab-pattern.md`
 
 ## Core Repositories
 - AI-Assisted Home Lab Operations:
