@@ -42,6 +42,7 @@ See:
 - `docs/unified-dashboard-and-monitoring-pattern.md`
 - `docs/switch-operations-and-hardening.md`
 - `docs/dns-and-local-naming-pattern.md`
+- `docs/pihole-unbound-resolver-pattern.md`
 - `docs/equipment-and-role-model.md`
 - `docs/standalone-ap-management-pattern.md`
 - `docs/server-installation-observations.md`
