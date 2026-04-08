@@ -2,7 +2,7 @@
 
 Security-first home lab portfolio documenting architecture, operations, monitoring, and maintenance workflows.
 
-Last reviewed: March 16, 2026
+Last reviewed: April 6, 2026
 
 ## What This Shows
 - Multi-host Linux operations across workstation, server, and Pi infrastructure
@@ -48,6 +48,11 @@ See:
 - `docs/server-installation-observations.md`
 - `docs/firewall-appliance-selection-notes.md`
 - `docs/virtual-firewall-vlan-lab-pattern.md`
+- `docs/virtualization-lab-planning-pattern.md`
+- `docs/repurposed-pc-to-ubuntu-server-pattern.md`
+- `docs/headless-dns-utility-node-pattern.md`
+- `docs/isp-router-to-dedicated-firewall-transition-pattern.md`
+- `docs/casaos-on-existing-ubuntu-server-pattern.md`
 
 ## Core Repositories
 - AI-Assisted Home Lab Operations:
