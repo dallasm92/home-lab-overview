@@ -51,6 +51,7 @@ See:
 - `docs/virtualization-lab-planning-pattern.md`
 - `docs/repurposed-pc-to-ubuntu-server-pattern.md`
 - `docs/headless-dns-utility-node-pattern.md`
+- `docs/internal-itsm-on-pi-core-pattern.md`
 - `docs/isp-router-to-dedicated-firewall-transition-pattern.md`
 - `docs/casaos-on-existing-ubuntu-server-pattern.md`
 
