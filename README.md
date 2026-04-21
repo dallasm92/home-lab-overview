@@ -2,7 +2,7 @@
 
 Security-first home lab portfolio documenting architecture, operations, monitoring, and maintenance workflows.
 
-Last reviewed: April 6, 2026
+Last reviewed: April 13, 2026
 
 ## What This Shows
 - Multi-host Linux operations across workstation, server, and Pi infrastructure
@@ -29,9 +29,9 @@ Use this repo to show:
 - public-safe documentation standards
 
 For direct troubleshooting evidence, start with:
-- `it-support-labs`
-- `ad-lab-windows-server-2022`
-- `pc-build-main-pc`
+- [IT Support Labs](https://github.com/dallasm92/it-support-labs)
+- [Active Directory Lab](https://github.com/dallasm92/ad-lab-windows-server-2022)
+- [PC Build - MAIN-PC](https://github.com/dallasm92/pc-build-main-pc)
 
 See:
 - `docs/current-state.md`
@@ -51,6 +51,7 @@ See:
 - `docs/virtualization-lab-planning-pattern.md`
 - `docs/repurposed-pc-to-ubuntu-server-pattern.md`
 - `docs/headless-dns-utility-node-pattern.md`
+- `docs/internal-itsm-on-pi-core-pattern.md`
 - `docs/isp-router-to-dedicated-firewall-transition-pattern.md`
 - `docs/casaos-on-existing-ubuntu-server-pattern.md`
 
