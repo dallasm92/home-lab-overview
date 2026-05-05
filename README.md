@@ -4,6 +4,9 @@ Security-first home lab portfolio documenting architecture, operations, monitori
 
 Last reviewed: April 13, 2026
 
+Social preview asset:
+- [assets/social-preview.png](assets/social-preview.png)
+
 ## What This Shows
 - Multi-host Linux operations across workstation, server, and Pi infrastructure
 - Centralized monitoring with service + device health checks
